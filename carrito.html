@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi cesta - La Trastienda</title>
+</head>
+<body>
+  <header>
+    <a href="index.html">La Trastienda</a>
+    <button type="button" aria-label="Buscar">🔍</button>
+    <button type="button" aria-label="Abrir menú">☰</button>
+  </header>
 
+  <main>
+    <header>
+      <h1>Mi cesta</h1>
+      <p>2 artículos</p>
+    </header>
+
+    <section aria-label="Lista de artículos">
+      <article>
+        <img src="portada-paciente-silenciosa.jpg" alt="Portada de La paciente silenciosa">
+        <div>
+          <h2><a href="detalle.html">La paciente silenciosa</a></h2>
+          <p>Alex Michaelides · Tapa dura</p>
+          <div>
+            <div>
+              <button type="button" aria-label="Reducir cantidad">-</button>
+              <span>1</span>
+              <button type="button" aria-label="Aumentar cantidad">+</button>
+            </div>
+            <p>19,90 €</p>
+          </div>
+        </div>
+      </article>
+
+      <article>
+        <img src="portada-silencio-ciudad-blanca.jpg" alt="Portada de El silencio de la ciudad blanca">
+        <div>
+          <h2><a href="detalle.html">El silencio de la ciudad blanca</a></h2>
+          <p>Eva García Sáenz de Urturi · Ebook</p>
+          <div>
+            <div>
+              <button type="button" aria-label="Reducir cantidad">-</button>
+              <span>1</span>
+              <button type="button" aria-label="Aumentar cantidad">+</button>
+            </div>
+            <p>9,99 €</p>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <section aria-label="Resumen del pedido">
+      <div>
+        <p>Subtotal</p>
+        <p>29,89 €</p>
+      </div>
+      <div>
+        <p>Envío</p>
+        <p>Gratis</p>
+      </div>
+      <div>
+        <p><strong>Total</strong></p>
+        <p><strong>29,89 €</strong></p>
+      </div>
+      <button type="button">Tramitar pedido</button>
+    </section>
+  </main>
+
+  <nav aria-label="Secciones de la app">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="explorar.html">Explorar</a></li>
+      <li><a href="carrito.html" aria-current="page">Cesta</a></li>
+      <li><a href="perfil.html">Perfil</a></li>
+    </ul>
+  </nav>
+</body>
+</html>
