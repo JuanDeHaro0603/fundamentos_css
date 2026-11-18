@@ -1,0 +1,16 @@
+body {
+  font-family: Arial, sans-serif;
+  color: #000000;
+}
+
+header {
+  background-color: #f9a4a4;
+}
+
+a {
+  color: #00ccbe;
+}
+nav a[aria-current="page"] {
+  color: #0055cc;
+  font-weight: bold;
+}
