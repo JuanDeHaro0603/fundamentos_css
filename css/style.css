@@ -14,3 +14,39 @@ nav a[aria-current="page"] {
   color: #0055cc;
   font-weight: bold;
 }
+nav a[aria-current="page"] {
+  color: #0055cc;
+  font-weight: bold;
+}
+
+nav a:not([aria-current="page"]) {
+  color: #666666;
+}
+
+nav a:hover {
+  color: #0055cc;
+}
+
+nav a:focus-visible {
+  outline: 2px solid #0055cc;
+  outline-offset: 2px;
+}
+
+h2 + .card {
+  border-left: 4px solid #0055cc;
+  padding-left: 8px;
+}
+
+.badge:empty {
+  display: none;
+}
+
+article:has(.badge:not(:empty)) {
+  background-color: #eef5ff;
+}
+
+button[aria-label] {
+  background-color: transparent;
+  border: 1px solid #cccccc;
+  cursor: pointer;
+}
