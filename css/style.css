@@ -20,12 +20,50 @@
   --border-subtle: var(--color-neutral-200);
 
   --color-accent-oklch: oklch(65% 0.22 25);
+
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.25rem;
+  --text-2xl: 1.5rem;
+  --text-3xl: 1.875rem;
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: 1.5;
   background-color: var(--bg-page);
   color: var(--text-main);
+  margin: 0;
+}
+
+main {
+  min-height: 100dvh;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display);
+}
+
+h1 {
+  font-size: var(--text-2xl);
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+h3 {
+  font-size: var(--text-lg);
+}
+
+p {
+  max-width: 65ch;
 }
 
 header {
@@ -45,6 +83,7 @@ button[aria-label] {
 .badge {
   background-color: var(--color-accent-oklch);
   color: var(--bg-card);
+  font-size: var(--text-xs);
 }
 
 .badge:empty {
@@ -53,7 +92,7 @@ button[aria-label] {
 
 h2 + .card {
   border-left: 4px solid var(--brand);
-  padding-left: 8px;
+  padding-left: 0.5rem;
 }
 
 article:has(.badge:not(:empty)) {
@@ -75,10 +114,12 @@ article.card {
 
   p {
     color: var(--text-muted);
+    font-size: var(--text-sm);
   }
 
   p:last-of-type {
     color: var(--text-main);
+    font-size: var(--text-base);
     font-weight: bold;
   }
 
@@ -86,6 +127,7 @@ article.card {
     background-color: var(--brand);
     color: var(--bg-card);
     border: 1px solid var(--brand);
+    font-size: var(--text-sm);
   }
 }
 
@@ -102,6 +144,7 @@ nav {
   a {
     color: var(--text-muted);
     text-decoration: none;
+    font-size: var(--text-sm);
 
     &[aria-current="page"] {
       color: var(--brand);
